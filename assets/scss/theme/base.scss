@@ -7,7 +7,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: $text-color-secondary;
     background: $smoky-white;
-    font-size: 14px;
+    font-size: 12px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -40,9 +40,9 @@ p {
 
 .wrapper {
     background: $theme-color;
-    max-width: 960px;
+    // max-width: 960px;
     margin: 0 auto;
-    margin-top: 30px;
+    // margin-top: 30px;
     position: relative;
     @include box-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
 }
@@ -69,8 +69,8 @@ p {
         .about-me-content {
             text-align: left;
             color: rgba(255, 255, 255, 0.8);
-            font-size: 14px;
-            font-weight: 400;
+            font-size: 12px;
+            font-weight: 500;
             margin-top: 0;
             margin-bottom: 0;
         }
@@ -81,10 +81,10 @@ p {
         width: 60%;
     }
     .section-title {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 700;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         text-align: center;
     }
     .contact-list {
@@ -223,7 +223,7 @@ p {
         margin-bottom: 0px;
     }
     .section {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 
     .name-section {
@@ -274,11 +274,10 @@ p {
     .project-title {
         font-weight: 400;
         margin-top: 0;
-        margin-bottom: 5px;
     }
     .projects-section {
         .item {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
     }
 }
@@ -289,13 +288,13 @@ p {
 
 .skillset {
     .item {
-        margin-bottom: 15px;
+        margin-bottom: 13px;
         overflow: hidden;
     }
     .level-title {
         font-size: 14px;
         margin-top: 0;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     .level-bar {
@@ -306,19 +305,5 @@ p {
 
     .theme-progress-bar {
         background: lighten($theme-color, 10%);
-    }
-}
-
-.footer {
-    padding: 30px;
-    padding-top: 60px;
-    .copyright {
-        line-height: 1.6;
-        color: $text-color-secondary;
-        font-size: 13px;
-    }
-
-    .fa-heart {
-        color: $heart;
     }
 }
