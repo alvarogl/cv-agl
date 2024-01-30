@@ -4,10 +4,10 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif !important;
     color: $text-color-secondary;
     background: $smoky-white;
-    font-size: 12px;
+    font-size: 12px !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -52,9 +52,8 @@ p {
     position: absolute;
     left: 0;
     width: 240px;
-    height: 100%;
-    min-height: 800px;
     color: #fff;
+    height: 100%;
     a {
         color: #fff;
     }

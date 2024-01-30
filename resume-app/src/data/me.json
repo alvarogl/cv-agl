@@ -62,13 +62,13 @@
             "details": {
                 "responsibilities": [
                     "Integration of company's biometric solutions to web platforms:",
-                    "- Creation and maintenance of Web SDKs implementing native libraries (Javascript, Typescript, WASM)",
-                    "- Demo Apps implementing those SDKs for potential customers (Angular, Vue.js)",
-                    "- Support to customer when integrating our solutions on their projects",
-                    "- Integration of native libraries in backend server (Java 11, Spring Boot, JNI, C++)",
+                    "Creation and maintenance of Web SDKs implementing native libraries (Javascript, Typescript, WASM)",
+                    "Demo Apps implementing those SDKs for potential customers (Angular, Vue.js)",
+                    "Support to customer when integrating our solutions on their projects",
+                    "Integration of native libraries in backend server (Java 11, Spring Boot, JNI, C++)",
                     "Also, using my previous experience, some tasks in CI/CD flow:",
-                    "- Design of a full pipeline for each of the web-related repositories",
-                    "- Helping in choosing the tools and architecture to be used (AWS)"
+                    "Design of a full pipeline for each of the web-related repositories",
+                    "Helping in choosing the tools and architecture to be used (AWS)"
                 ]
             }
         },
@@ -79,15 +79,15 @@
             "details": {
                 "responsibilities": [
                     "Development of Time management application for ELCA's internal use:",
-                    "- Focused in Front-end development using Angular 8 and Bootstrap. TDD using Jest and Karma. (3 months)",
-                    "- Support to backend tasks with JAVA 11 + SpringBoot",
+                    "Focused in Front-end development using Angular 8 and Bootstrap. TDD using Jest and Karma. (3 months)",
+                    "Support to backend tasks with JAVA 11 + SpringBoot",
                     "Then, in SecuTix (an ELCA's company), as part of the platform team:",
-                    "- Tech stack in JAVA 11 + Spring + Hibernate + ActiveMQ. CI/CD with Jenkins. Oracle DB. Quality monitoring using Selenium, Integration Tests, Fitnesse, Postman, SONAR",
-                    "- Design, support and development of public APIs in SOAP and REST",
-                    "- Development of connectors and interfaces to external systems",
-                    "- Direct support to customer's integrators willing to use our APIs",
-                    "- Using SCRUM methodology with JIRA and applying TDD with JUnit and Mockito",
-                    "- Responsible of migration to microservices for external connectors"
+                    "Tech stack in JAVA 11 + Spring + Hibernate + ActiveMQ. CI/CD with Jenkins. Oracle DB. Quality monitoring using Selenium, Integration Tests, Fitnesse, Postman, SONAR",
+                    "Design, support and development of public APIs in SOAP and REST",
+                    "Development of connectors and interfaces to external systems",
+                    "Direct support to customer's integrators willing to use our APIs",
+                    "Using SCRUM methodology with JIRA and applying TDD with JUnit and Mockito",
+                    "Responsible of migration to microservices for external connectors"
                 ]
             }
         },
@@ -98,8 +98,8 @@
             "details": {
                 "responsibilities": [
                     "Ruby on Rails Application, development driven by Agile methodologies. Developing NGA's flagship, hrX Exchange:",
-                    "- Working both in Backend and Frontend using technologies as MongoDB, MySQL, jQuery, Bootstrap, HAML, CoffeeScript, Angular 6, SASS, Javascript, and, of course, Ruby on Rails framework.",
-                    "- Following TDD process with RSPEC to test our application. Maintenance and usage of Docker for usage of the application."
+                    "Working both in Backend and Frontend using technologies as MongoDB, MySQL, jQuery, Bootstrap, HAML, CoffeeScript, Angular 6, SASS, Javascript, and, of course, Ruby on Rails framework.",
+                    "Following TDD process with RSPEC to test our application. Maintenance and usage of Docker for usage of the application."
                 ]
             }
         },
@@ -110,8 +110,8 @@
             "details": {
                 "responsibilities": [
                     "Technical SAP HCM Non Payroll consultant, specialized in Talent Management modules:",
-                    "- Technical and functional deeper knowledge of Talent Modules (Performance, Learning, Compensation, e-Recruiting)",
-                    "- Modification of customer's frontend system based on Javascript, jQuery, Prototype, and CSS."
+                    "Technical and functional deeper knowledge of Talent Modules (Performance, Learning, Compensation, e-Recruiting)",
+                    "Modification of customer's frontend system based on Javascript, jQuery, Prototype, and CSS."
                 ]
             }
         },
@@ -122,8 +122,8 @@
             "details": {
                 "responsibilities": [
                     "Web Application development and maintenance for GDPR Compliance of customers",
-                    "- Maintenance and develop of website using PHP4, and Javascript",
-                    "- MySQL Database management and queries design"
+                    "Maintenance and develop of website using PHP4, and Javascript",
+                    "MySQL Database management and queries design"
                 ]
             }
         }

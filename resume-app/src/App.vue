@@ -16,9 +16,7 @@
       <TitleComponent :resumeData="resumeData" />
       <hr />      
       <ExperiencesComponent :resumeData="resumeData" />
-      <hr />
-      <CoursesComponent :resumeData="resumeData" />
-      <hr />
+      <ProjectsComponent :resumeData="resumeData" />
       <SkillsComponent :resumeData="resumeData" />
     </div>
   </div>
@@ -34,7 +32,7 @@ import InterestsComponent from './components/InterestsComponent.vue';
 import SoftSkillsComponent from './components/SoftSkillsComponent.vue';
 import TitleComponent from './components/TitleComponent.vue';
 import ExperiencesComponent from './components/ExperiencesComponent.vue';
-import CoursesComponent from './components/CoursesComponent.vue';
+import ProjectsComponent from './components/ProjectsComponent.vue';
 import SkillsComponent from './components/SkillsComponent.vue';
 import resumeData from './data/me.json';
 
@@ -50,15 +48,11 @@ export default {
     SoftSkillsComponent,
     TitleComponent,
     ExperiencesComponent,
-    CoursesComponent,
+    ProjectsComponent,
     SkillsComponent
   },
   mounted() {
     document.title = "It's me, Álvaro!";
-    const fontLink = document.createElement('link')
-    fontLink.href = this.$root.$options.head.fontLink
-    fontLink.rel = 'stylesheet'
-    document.head.appendChild(fontLink)
   },
   data() {
     return {
@@ -69,5 +63,7 @@ export default {
 </script>
 
 <style lang="scss">
-/* Add global styles here */
+.fas{
+  margin-top: 6px;
+}
 </style>
