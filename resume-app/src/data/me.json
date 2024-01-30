@@ -1,0 +1,174 @@
+{
+    "about": {
+        "title": "About me",
+        "content": "I'm an dynamic Web developer (backend mainly) with 6+ years of experience in different techonologies like JAVA, Ruby on Rails, or SAP. Flirting with DevOps. Eager to improve my career with different experiences, while supporting the team as much as possible."
+    },
+    "contact": {
+        "name": "Álvaro Gutiérrez",
+        "tagline": "Full Stack Developer",
+        "email": "alvaro.glopez@gmail.com",
+        "phone": "+34 695 075 191",
+        "web": "https://agutierrez.ohv",
+        "linkedin": "https://www.linkedin.com/in/alvaro-gutierrez-lopez/",
+        "location": "Granada, Spain",
+        "github": "https://github.com/alvarogl"
+    },
+    "education": [
+        {
+            "degree": "Telecommunication engineering",
+            "university": "University of Granada",
+            "time": "2009 - 2014"
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "proficiency": "Native"
+        },
+        {
+            "language": "English",
+            "proficiency": "Professional"
+        }
+    ],
+    "interests": [
+        {
+            "icon": "fa-microchip",
+            "interest": "Fan of tech and gadgets blogs"
+        },
+        {
+            "icon": "fa-code",
+            "interest": "Proactive and autodidact while learning new technologies"
+        },
+        {
+            "icon": "fa-football-ball",
+            "interest": "Assistant coach in Granada Lions, american football team"
+        },
+        {
+            "icon": "fa-camera",
+            "interest": "Amateur photographer and editor"
+        }
+    ],
+    "softSkills": [
+        "Ability to solve problems",
+        "Ability to quickly learn new technologies and methodologies",
+        "Capacity for criticism and selfcriticism",
+        "Team player - One for all and all for one!"
+    ],
+    "experiences": [
+        {
+            "job_title": "Sr Fullstack Developer",
+            "time": "05/2022 - Present",
+            "company": "IDENTY Touchless ID, Full-Remote",
+            "details": {
+                "responsibilities": [
+                    "Integration of company's biometric solutions to web platforms:",
+                    "- Creation and maintenance of Web SDKs implementing native libraries (Javascript, Typescript, WASM)",
+                    "- Demo Apps implementing those SDKs for potential customers (Angular, Vue.js)",
+                    "- Support to customer when integrating our solutions on their projects",
+                    "- Integration of native libraries in backend server (Java 11, Spring Boot, JNI, C++)",
+                    "Also, using my previous experience, some tasks in CI/CD flow:",
+                    "- Design of a full pipeline for each of the web-related repositories",
+                    "- Helping in choosing the tools and architecture to be used (AWS)"
+                ]
+            }
+        },
+        {
+            "job_title": "Backend JAVA Developer",
+            "time": "08/2019 - 04/2022",
+            "company": "ELCA Information Technology, Granada(Spain)",
+            "details": {
+                "responsibilities": [
+                    "Development of Time management application for ELCA's internal use:",
+                    "- Focused in Front-end development using Angular 8 and Bootstrap. TDD using Jest and Karma. (3 months)",
+                    "- Support to backend tasks with JAVA 11 + SpringBoot",
+                    "Then, in SecuTix (an ELCA's company), as part of the platform team:",
+                    "- Tech stack in JAVA 11 + Spring + Hibernate + ActiveMQ. CI/CD with Jenkins. Oracle DB. Quality monitoring using Selenium, Integration Tests, Fitnesse, Postman, SONAR",
+                    "- Design, support and development of public APIs in SOAP and REST",
+                    "- Development of connectors and interfaces to external systems",
+                    "- Direct support to customer's integrators willing to use our APIs",
+                    "- Using SCRUM methodology with JIRA and applying TDD with JUnit and Mockito",
+                    "- Responsible of migration to microservices for external connectors"
+                ]
+            }
+        },
+        {
+            "job_title": "Ruby on Rails Developer (Full Stack)",
+            "time": "07/2018 - 08/2019",
+            "company": "NGA Human Resources, Granada(Spain)",
+            "details": {
+                "responsibilities": [
+                    "Ruby on Rails Application, development driven by Agile methodologies. Developing NGA's flagship, hrX Exchange:",
+                    "- Working both in Backend and Frontend using technologies as MongoDB, MySQL, jQuery, Bootstrap, HAML, CoffeeScript, Angular 6, SASS, Javascript, and, of course, Ruby on Rails framework.",
+                    "- Following TDD process with RSPEC to test our application. Maintenance and usage of Docker for usage of the application."
+                ]
+            }
+        },
+        {
+            "job_title": "SAP HCM Technical Consultant",
+            "time": "10/2015 - 07/2018",
+            "company": "NGA Human Resources, Granada(Spain)",
+            "details": {
+                "responsibilities": [
+                    "Technical SAP HCM Non Payroll consultant, specialized in Talent Management modules:",
+                    "- Technical and functional deeper knowledge of Talent Modules (Performance, Learning, Compensation, e-Recruiting)",
+                    "- Modification of customer's frontend system based on Javascript, jQuery, Prototype, and CSS."
+                ]
+            }
+        },
+        {
+            "job_title": "Web developer Internship",
+            "time": "06/2014 - 04/2015",
+            "company": "Aucón Asesores, S.L., Granada (Spain)",
+            "details": {
+                "responsibilities": [
+                    "Web Application development and maintenance for GDPR Compliance of customers",
+                    "- Maintenance and develop of website using PHP4, and Javascript",
+                    "- MySQL Database management and queries design"
+                ]
+            }
+        }
+    ],
+    "courses": [
+        {
+            "title": "J2EE: Web Development, JSF, SPRING​",
+            "provider": "Arelance",
+            "year": 2021
+        },
+        {
+            "title": "Some Udemy courses related to TDD, BDD, Angular, Docker, Kubernetes",
+            "provider": "Udemy",
+            "year": null
+        },
+        {
+            "title": "ANDROID FOR BEGINNERS",
+            "provider": "Darwin Eventour",
+            "year": 2017
+        }
+    ],
+    "skills": [
+        {
+            "name": "JAVA & Spring",
+            "proficiency": 90
+        },
+        {
+            "name": "Javascript & Typescript",
+            "proficiency": 70
+        },
+        {
+            "name": "Angular 2+",
+            "proficiency": 60
+        },
+        {
+            "name": "HTML5 & CSS",
+            "proficiency": 70
+        },
+        {
+            "name": "Ruby on Rails",
+            "proficiency": 50
+        },
+        {
+            "name": "Docker",
+            "proficiency": 80
+        }
+    ]
+}
