@@ -8,10 +8,19 @@
         "tagline": "Full Stack Developer",
         "email": "alvaro.glopez@gmail.com",
         "phone": "+34 695 075 191",
-        "web": "https://agutierrez.ohv",
-        "linkedin": "https://www.linkedin.com/in/alvaro-gutierrez-lopez/",
+        "web": {
+            "text": "agutierrez.ohv",
+            "link": "https://agutierrez.ohv"
+        },
+        "linkedin": {
+            "text": "alvaro-gutierrez-lopez",
+            "link": "https://www.linkedin.com/in/alvaro-gutierrez-lopez/"
+        },
         "location": "Granada, Spain",
-        "github": "https://github.com/alvarogl"
+        "github": {
+            "text": "alvarogl",
+            "link": "https://github.com/alvarogl"
+        }
     },
     "education": [
         {
@@ -56,19 +65,46 @@
     ],
     "experiences": [
         {
+            "job_title": "Sr Backend Developer",
+            "time": "11/2022 - 11/2022",
+            "company": "TapTap Digital S.L., Full-Remote",
+            "details": {
+                "responsibilities": [
+                    {
+                        "head": "As part of the backend team, I take part of developing and adding new features to the Sonata DSP and its environment using different technologies:",
+                        "elements": [
+                            "Evolution of bidding system with hexagonal architecture",
+                            "Usage of Java 11/17 and NodeJS as languages. MongoDB, PostgreSQL, AWS, Kafka are also present on the stack.",
+                            "Support to other teams when using our APIs and solving issues for support team",
+                            "Monitoring of the systems using Grafana/Prometheus. We attend over 5K requests per second!",
+                            "We own the CI/CD process. With support from DevOps team, it is our responsability to design, test, and deploy new features."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
             "job_title": "Sr Fullstack Developer",
-            "time": "05/2022 - Present",
+            "time": "05/2022 - 11/2022",
             "company": "IDENTY Touchless ID, Full-Remote",
             "details": {
                 "responsibilities": [
-                    "Integration of company's biometric solutions to web platforms:",
-                    "Creation and maintenance of Web SDKs implementing native libraries (Javascript, Typescript, WASM)",
-                    "Demo Apps implementing those SDKs for potential customers (Angular, Vue.js)",
-                    "Support to customer when integrating our solutions on their projects",
-                    "Integration of native libraries in backend server (Java 11, Spring Boot, JNI, C++)",
-                    "Also, using my previous experience, some tasks in CI/CD flow:",
-                    "Design of a full pipeline for each of the web-related repositories",
-                    "Helping in choosing the tools and architecture to be used (AWS)"
+                    {
+                        "head": "Integration of company's biometric solutions to web platforms:",
+                        "elements": [
+                            "Creation and maintenance of Web SDKs implementing native libraries (Javascript, Typescript, WASM)",
+                            "Demo Apps implementing those SDKs for potential customers (Angular, Vue.js)",
+                            "Support to customer when integrating our solutions on their projects",
+                            "Integration of native libraries in backend server (Java 11, Spring Boot, JNI, C++)"
+                        ]
+                    },
+                    {
+                        "head": "Also, using my previous experience, some tasks in CI/CD flow:",
+                        "elements": [
+                            "Design of a full pipeline for each of the web-related repositories",
+                            "Helping in choosing the tools and architecture to be used (AWS)"
+                        ]
+                    }
                 ]
             }
         },
@@ -78,16 +114,24 @@
             "company": "ELCA Information Technology, Granada(Spain)",
             "details": {
                 "responsibilities": [
-                    "Development of Time management application for ELCA's internal use:",
-                    "Focused in Front-end development using Angular 8 and Bootstrap. TDD using Jest and Karma. (3 months)",
-                    "Support to backend tasks with JAVA 11 + SpringBoot",
-                    "Then, in SecuTix (an ELCA's company), as part of the platform team:",
-                    "Tech stack in JAVA 11 + Spring + Hibernate + ActiveMQ. CI/CD with Jenkins. Oracle DB. Quality monitoring using Selenium, Integration Tests, Fitnesse, Postman, SONAR",
-                    "Design, support and development of public APIs in SOAP and REST",
-                    "Development of connectors and interfaces to external systems",
-                    "Direct support to customer's integrators willing to use our APIs",
-                    "Using SCRUM methodology with JIRA and applying TDD with JUnit and Mockito",
-                    "Responsible of migration to microservices for external connectors"
+                    {
+                        "head": "Development of Time management application for ELCA's internal use:",
+                        "elements": [
+                            "Focused in Front-end development using Angular 8 and Bootstrap. TDD using Jest and Karma. (3 months)",
+                            "Support to backend tasks with JAVA 11 + SpringBoot"
+                        ]
+                    },
+                    {
+                        "head": "Then, in SecuTix (an ELCA's company), as part of the platform team:",
+                        "elements": [
+                            "Tech stack in JAVA 11 + Spring + Hibernate + ActiveMQ. CI/CD with Jenkins. Oracle DB. Quality monitoring using Selenium, Integration Tests, Fitnesse, Postman, SONAR",
+                            "Design, support and development of public APIs in SOAP and REST",
+                            "Development of connectors and interfaces to external systems",
+                            "Direct support to customer's integrators willing to use our APIs",
+                            "Using SCRUM methodology with JIRA and applying TDD with JUnit and Mockito",
+                            "Responsible of migration to microservices for external connectors"
+                        ]
+                    }
                 ]
             }
         },
@@ -97,9 +141,13 @@
             "company": "NGA Human Resources, Granada(Spain)",
             "details": {
                 "responsibilities": [
-                    "Ruby on Rails Application, development driven by Agile methodologies. Developing NGA's flagship, hrX Exchange:",
-                    "Working both in Backend and Frontend using technologies as MongoDB, MySQL, jQuery, Bootstrap, HAML, CoffeeScript, Angular 6, SASS, Javascript, and, of course, Ruby on Rails framework.",
-                    "Following TDD process with RSPEC to test our application. Maintenance and usage of Docker for usage of the application."
+                    {
+                        "head": "Ruby on Rails Application, development driven by Agile methodologies. Developing NGA's flagship, hrX Exchange:",
+                        "elements": [
+                            "Working both in Backend and Frontend using technologies as MongoDB, MySQL, jQuery, Bootstrap, HAML, CoffeeScript, Angular 6, SASS, Javascript, and, of course, Ruby on Rails framework.",
+                            "Following TDD process with RSPEC to test our application. Maintenance and usage of Docker for usage of the application."
+                        ]
+                    }
                 ]
             }
         },
@@ -109,9 +157,13 @@
             "company": "NGA Human Resources, Granada(Spain)",
             "details": {
                 "responsibilities": [
-                    "Technical SAP HCM Non Payroll consultant, specialized in Talent Management modules:",
-                    "Technical and functional deeper knowledge of Talent Modules (Performance, Learning, Compensation, e-Recruiting)",
-                    "Modification of customer's frontend system based on Javascript, jQuery, Prototype, and CSS."
+                    {
+                        "head": "Technical SAP HCM Non Payroll consultant, specialized in Talent Management modules:",
+                        "elements": [
+                            "Technical and functional deeper knowledge of Talent Modules (Performance, Learning, Compensation, e-Recruiting)",
+                            "Modification of customer's frontend system based on Javascript, jQuery, Prototype, and CSS."
+                        ]
+                    }
                 ]
             }
         },
@@ -121,9 +173,13 @@
             "company": "Aucón Asesores, S.L., Granada (Spain)",
             "details": {
                 "responsibilities": [
-                    "Web Application development and maintenance for GDPR Compliance of customers",
-                    "Maintenance and develop of website using PHP4, and Javascript",
-                    "MySQL Database management and queries design"
+                    {
+                        "elements": [
+                            "Web Application development and maintenance for GDPR Compliance of customers",
+                            "Maintenance and develop of website using PHP4, and Javascript",
+                            "MySQL Database management and queries design"
+                        ]
+                    }
                 ]
             }
         }
@@ -140,7 +196,7 @@
             "year": null
         },
         {
-            "title": "ANDROID FOR BEGINNERS",
+            "title": "Android for Beginners",
             "provider": "Darwin Eventour",
             "year": 2017
         }

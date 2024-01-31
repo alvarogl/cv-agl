@@ -12,11 +12,11 @@
       </li>
       <li class="web">
         <i class="fa-solid fa-globe"></i>
-        <a :href="resumeData.contact.web" target="_blank">{{ resumeData.contact.web }}</a>
+        <a :href="resumeData.contact.web.link" target="_blank">{{ resumeData.contact.web.text }}</a>
       </li>
       <li class="linkedin">
         <i class="fab fa-linkedin-in"></i>
-        <a :href="resumeData.contact.linkedin" target="_blank">{{ resumeData.contact.linkedin }}</a>
+        <a :href="resumeData.contact.linkedin.link" target="_blank">{{ resumeData.contact.linkedin.text }}</a>
       </li>
       <li class="location">
         <i class="fas fa-map-marked-alt"></i>
@@ -24,7 +24,7 @@
       </li>
       <li class="github">
         <i class="fa-brands fa-github"></i>
-        <a :href="resumeData.contact.github" target="_blank">{{ resumeData.contact.github }}</a>
+        <a :href="resumeData.contact.github.link" target="_blank">{{ resumeData.contact.github.text }}</a>
       </li>
     </ul>
   </div>
@@ -42,7 +42,7 @@ a {
 }
 
 i {
-  margin-right: 3px
+  margin-right: 10px
 }
 
 a:hover {

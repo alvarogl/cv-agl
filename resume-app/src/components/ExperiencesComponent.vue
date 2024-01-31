@@ -11,9 +11,10 @@
         </div>
         <div class="company">{{ exp.company }}</div>
       </div>
-      <div class="details">
+      <div class="details" v-for="(responsibility, index) in exp.details.responsibilities" :key="index">
+        <p>{{ responsibility.head }}</p>
         <ul>
-          <li v-for="(responsibility, index) in exp.details.responsibilities" :key="index">{{ responsibility }}</li>
+          <li v-for="(element, idx) in responsibility.elements" :key="idx">{{ element }}</li>
         </ul>
       </div>
     </div>
