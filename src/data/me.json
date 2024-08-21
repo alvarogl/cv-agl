@@ -66,7 +66,7 @@
     "experiences": [
         {
             "job_title": "Sr Backend Developer",
-            "time": "11/2022 - 11/2022",
+            "time": "11/2022 - Present",
             "company": "TapTap Digital S.L., Full-Remote",
             "details": {
                 "responsibilities": [
@@ -74,7 +74,7 @@
                         "head": "As part of the backend team, I take part of developing and adding new features to the Sonata DSP and its environment using different technologies:",
                         "elements": [
                             "Evolution of bidding system with hexagonal architecture",
-                            "Usage of Java 11/17 and NodeJS as languages. MongoDB, PostgreSQL, AWS, Kafka are also present on the stack.",
+                            "Usage of Java 11/17 and NodeJS as languages. MongoDB, PostgreSQL, AWS, Kafka, ElasticSearch are also present on the stack.",
                             "Support to other teams when using our APIs and solving issues for support team",
                             "Monitoring of the systems using Grafana/Prometheus. We attend over 5K requests per second!",
                             "We own the CI/CD process. With support from DevOps team, it is our responsability to design, test, and deploy new features."
