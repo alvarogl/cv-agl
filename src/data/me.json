@@ -74,10 +74,11 @@
                         "head": "As part of the backend team, I take part of developing and adding new features to the Sonata DSP and its environment using different technologies:",
                         "elements": [
                             "Evolution of bidding system with hexagonal architecture",
-                            "Usage of Java 11/17 and NodeJS as languages. MongoDB, PostgreSQL, AWS, Kafka, ElasticSearch are also present on the stack.",
+                            "Usage of Java 17/21 and Typescript as languages. NodeJS, MongoDB, PostgreSQL, AWS, Kafka, and ElasticSearch are also present on the stack.",
                             "Support to other teams when using our APIs and solving issues for support team",
                             "Monitoring of the systems using Grafana/Prometheus. We attend over 5K requests per second!",
-                            "We own the CI/CD process. With support from DevOps team, it is our responsability to design, test, and deploy new features."
+                            "We own the CI/CD process. With support from DevOps team, it is our responsability to design, test, and deploy new features.",
+                            "Cloud ready! AWS is our main provider."
                         ]
                     }
                 ]
@@ -186,7 +187,7 @@
     ],
     "courses": [
         {
-            "title": "J2EE: Web Development, JSF, SPRING​",
+            "title": "J2EE: Web Development, JSF, SPRING",
             "provider": "Arelance",
             "year": 2021
         },
@@ -207,20 +208,16 @@
             "proficiency": 90
         },
         {
+            "name": "NodeJS (Express)",
+            "proficiency": 75
+        },
+        {
             "name": "Javascript & Typescript",
             "proficiency": 70
         },
         {
-            "name": "Angular 2+",
-            "proficiency": 60
-        },
-        {
-            "name": "HTML5 & CSS",
-            "proficiency": 70
-        },
-        {
-            "name": "Ruby on Rails",
-            "proficiency": 50
+            "name": "Frontend (React, Angular, HTML5, CSS)",
+            "proficiency": 55
         },
         {
             "name": "Docker",
