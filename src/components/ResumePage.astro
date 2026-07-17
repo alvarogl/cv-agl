@@ -1,0 +1,148 @@
+---
+import meImage from '../assets/me.png';
+import { Image } from 'astro:assets';
+import { contactItems, highlightFacts, labels, resumeData } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+const { locale } = Astro.props;
+const copy = labels[locale];
+---
+
+<BaseLayout locale={locale} labels={copy}>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href={locale === 'en' ? '/' : '/es/'}>
+        <span class="brand-mark">AG</span>
+        <span>{resumeData.contact.name}</span>
+      </a>
+
+      <nav class="section-nav" aria-label="Section navigation">
+        <a href="#summary">{copy.nav.summary}</a>
+        <a href="#experience">{copy.nav.experience}</a>
+        <a href="#skills">{copy.nav.skills}</a>
+        <a href="#contact">{copy.nav.contact}</a>
+      </nav>
+
+      <LanguageSwitcher locale={locale} labels={copy} />
+    </header>
+
+    <main class="content-grid">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">{copy.hero.availability}</p>
+          <h1>{copy.hero.title}</h1>
+          <p class="hero-summary">{copy.hero.description}</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">{copy.hero.primaryCta}</a>
+            <a class="button button-secondary" href="#experience">{copy.hero.secondaryCta}</a>
+          </div>
+
+          <dl class="hero-meta">
+            <div>
+              <dt>Role</dt>
+              <dd>{resumeData.contact.tagline}</dd>
+            </div>
+            <div>
+              <dt>{copy.hero.locationLabel}</dt>
+              <dd>{resumeData.contact.location}</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <Image src={meImage} alt={resumeData.contact.name} widths={[320, 480]} sizes="(max-width: 768px) 280px, 320px" />
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar-card" id="summary">
+        <div class="section-heading">
+          <p class="eyebrow">{copy.summary.eyebrow}</p>
+          <h2>{copy.summary.title}</h2>
+        </div>
+
+        <p class="section-text">{resumeData.about.content}</p>
+
+        <ul class="fact-list">
+          {highlightFacts.map((fact) => (
+            <li>{fact}</li>
+          ))}
+        </ul>
+      </aside>
+
+      <section class="content-card section-card" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">{copy.experience.eyebrow}</p>
+          <h2>{copy.experience.title}</h2>
+        </div>
+
+        <div class="timeline">
+          {resumeData.experiences.map((experience) => (
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-period">{experience.time}</p>
+                <h3>{experience.job_title}</h3>
+                <p class="timeline-company">{experience.company}</p>
+              </div>
+
+              <div class="timeline-content">
+                {experience.details.responsibilities.map((responsibility) => (
+                  <div class="responsibility-block">
+                    {responsibility.head && <p class="responsibility-head">{responsibility.head}</p>}
+                    <ul>
+                      {responsibility.elements.map((element) => (
+                        <li>{element}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="content-card section-card" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">{copy.skills.eyebrow}</p>
+          <h2>{copy.skills.title}</h2>
+          <p class="section-note">{copy.skills.note}</p>
+        </div>
+
+        <div class="skills-grid">
+          {resumeData.skills.map((skill) => (
+            <article class="skill-card">
+              <div class="skill-header">
+                <h3>{skill.name}</h3>
+                <span>{skill.proficiency}%</span>
+              </div>
+              <div class="skill-bar" aria-hidden="true">
+                <span style={`width: ${skill.proficiency}%`}></span>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="content-card section-card contact-card" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">{copy.contact.eyebrow}</p>
+          <h2>{copy.contact.title}</h2>
+          <p class="section-note">{copy.contact.intro}</p>
+        </div>
+
+        <div class="contact-grid">
+          {contactItems.map((item) => (
+            <a class="contact-item" href={item.href} target={item.href.startsWith('mailto:') ? undefined : '_blank'} rel={item.href.startsWith('mailto:') ? undefined : 'noreferrer'}>
+              <span>{item.label}</span>
+              <strong>{item.value}</strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    </main>
+  </div>
+</BaseLayout>
