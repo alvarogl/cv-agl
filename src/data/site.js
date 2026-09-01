@@ -10,6 +10,9 @@ const labels = {
     },
     hero: {
       availability: 'Open to senior backend and full-stack roles',
+      titleLead: 'Senior engineer for',
+      titleAccent: 'complex systems',
+      titleTail: 'that need to ship.',
       title: 'Building reliable products with backend depth and delivery focus.',
       description:
         'Senior engineer with experience across Java, TypeScript, cloud platforms, and team-facing product delivery. This site is designed for fast recruiter review: clear scope, clean chronology, and immediate contact options.',
@@ -23,7 +26,8 @@ const labels = {
     },
     experience: {
       eyebrow: 'Career',
-      title: 'Experience focused on delivery, APIs, and platform evolution'
+      title: 'Experience focused on delivery, APIs, and platform evolution',
+      note: 'A track record of owning services, integrations, and delivery pipelines from first commit to production.'
     },
     skills: {
       eyebrow: 'Core skills',
@@ -55,6 +59,9 @@ const labels = {
     },
     hero: {
       availability: 'Abierto a posiciones senior backend y full-stack',
+      titleLead: 'Ingeniero senior para',
+      titleAccent: 'sistemas complejos',
+      titleTail: 'que necesitan llegar a producción.',
       title: 'Construyendo productos fiables con foco en backend y entrega.',
       description:
         'Ingeniero senior con experiencia en Java, TypeScript, cloud y entrega de producto con equipos multidisciplinares. Esta version prioriza una revision rapida por parte de recruiters.',
@@ -68,7 +75,8 @@ const labels = {
     },
     experience: {
       eyebrow: 'Trayectoria',
-      title: 'Experiencia centrada en delivery, APIs y evolucion de plataforma'
+      title: 'Experiencia centrada en delivery, APIs y evolucion de plataforma',
+      note: 'Una trayectoria construyendo servicios, integraciones y pipelines desde el primer commit hasta producción.'
     },
     skills: {
       eyebrow: 'Habilidades clave',

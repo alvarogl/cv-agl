@@ -30,8 +30,9 @@ const copy = labels[locale];
     <main class="content-grid">
       <section class="hero-card">
         <div class="hero-copy">
-          <p class="eyebrow">{copy.hero.availability}</p>
-          <h1>{copy.hero.title}</h1>
+          <div class="status-line"><span class="status-dot"></span>{copy.hero.availability}</div>
+          <p class="eyebrow">{resumeData.contact.tagline} · {resumeData.contact.location}</p>
+          <h1>{copy.hero.titleLead} <em>{copy.hero.titleAccent}</em> {copy.hero.titleTail}</h1>
           <p class="hero-summary">{copy.hero.description}</p>
 
           <div class="hero-actions">
@@ -39,22 +40,19 @@ const copy = labels[locale];
             <a class="button button-secondary" href="#experience">{copy.hero.secondaryCta}</a>
           </div>
 
-          <dl class="hero-meta">
-            <div>
-              <dt>Role</dt>
-              <dd>{resumeData.contact.tagline}</dd>
-            </div>
-            <div>
-              <dt>{copy.hero.locationLabel}</dt>
-              <dd>{resumeData.contact.location}</dd>
-            </div>
-          </dl>
+          <div class="proof-points" aria-label="Career highlights">
+            <div><strong>6+</strong><span>years building<br />web products</span></div>
+            <div><strong>5K+</strong><span>requests / second<br />supported</span></div>
+            <div><strong>EU</strong><span>remote-ready<br />collaboration</span></div>
+          </div>
         </div>
 
         <div class="hero-visual">
+          <span class="visual-label">Currently at<br /><strong>TapTap Digital</strong></span>
           <div class="portrait-frame">
-            <Image src={meImage} alt={resumeData.contact.name} widths={[320, 480]} sizes="(max-width: 768px) 280px, 320px" />
+            <Image src={meImage} alt={resumeData.contact.name} widths={[480, 640]} sizes="(max-width: 768px) 230px, 280px" />
           </div>
+          <span class="visual-caption">Backend · APIs · Platform</span>
         </div>
       </section>
 
@@ -75,8 +73,9 @@ const copy = labels[locale];
 
       <section class="content-card section-card" id="experience">
         <div class="section-heading">
-          <p class="eyebrow">{copy.experience.eyebrow}</p>
+          <div class="section-kicker"><p class="eyebrow">{copy.experience.eyebrow}</p><span>2014 — now</span></div>
           <h2>{copy.experience.title}</h2>
+          <p class="section-note">{copy.experience.note}</p>
         </div>
 
         <div class="timeline">
