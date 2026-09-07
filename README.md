@@ -51,3 +51,26 @@ The workflow publishes:
 
 - `latest` on `master`
 - a commit SHA tag for traceability
+
+## Production deployment
+
+The production site is served at [https://agutierrez.ovh](https://agutierrez.ovh).
+GitHub Actions publishes the private Docker Hub image; the homelab then checks
+for a new `latest` image once per day and deploys it only after the container
+health check succeeds.
+
+Deployment configuration intentionally lives with the homelab rather than in
+this application repository:
+
+- Stack: `/opt/homelab/cv-agl/docker-compose.yml`
+- Traefik route and Cloudflare DNS label: `agutierrez.ovh`
+- Dashboard and health monitoring: Homepage and Uptime Kuma
+
+To request an update immediately on the homelab, run:
+
+```bash
+systemctl --user start cv-agl-update.service
+```
+
+The Docker Hub credential is configured only on the deployment host and must
+not be committed to this repository.
