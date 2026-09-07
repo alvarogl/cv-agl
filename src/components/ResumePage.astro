@@ -4,6 +4,7 @@ import { Image } from 'astro:assets';
 import { contactItems, highlightFacts, labels, resumeData } from '../data/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import ContactIcon from './ContactIcon.astro';
 
 const { locale } = Astro.props;
 const copy = labels[locale];
@@ -136,7 +137,8 @@ const copy = labels[locale];
         <div class="contact-grid">
           {contactItems.map((item) => (
             <a class="contact-item" href={item.href} target={item.href.startsWith('mailto:') ? undefined : '_blank'} rel={item.href.startsWith('mailto:') ? undefined : 'noreferrer'}>
-              <span>{item.label}</span>
+              <span class="contact-icon"><ContactIcon type={item.icon} /></span>
+              <span class="contact-label">{item.label}</span>
               <strong>{item.value}</strong>
             </a>
           ))}

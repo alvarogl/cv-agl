@@ -109,21 +109,25 @@ const highlightFacts = [
 
 const contactItems = [
   {
+    icon: 'email',
     label: 'Email',
     href: `mailto:${resumeData.contact.email}`,
     value: resumeData.contact.email
   },
   {
+    icon: 'linkedin',
     label: 'LinkedIn',
     href: resumeData.contact.linkedin.link,
     value: resumeData.contact.linkedin.text
   },
   {
+    icon: 'github',
     label: 'GitHub',
     href: resumeData.contact.github.link,
     value: resumeData.contact.github.text
   },
   {
+    icon: 'website',
     label: 'Website',
     href: resumeData.contact.web.link,
     value: resumeData.contact.web.text
