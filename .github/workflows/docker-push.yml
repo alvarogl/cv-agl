@@ -55,9 +55,11 @@ jobs:
       - name: Retain the 10 newest commit tags
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_CLEANUP_TOKEN }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
           REPOSITORY: ${{ env.IMAGE_NAME }}
         run: |
+          set -euo pipefail
+
           token="$(
             curl --fail --silent --show-error \
               --request POST \
@@ -66,6 +68,7 @@ jobs:
               https://hub.docker.com/v2/users/login/ |
               jq -r ".token"
           )"
+          test -n "$token" && test "$token" != "null"
 
           namespace="${REPOSITORY%%/*}"
           repo="${REPOSITORY#*/}"
@@ -76,6 +79,7 @@ jobs:
             jq -r ".results[].name | select(startswith(\"sha-\"))" |
             tail -n +11 |
             while read -r tag; do
+              echo "Deleting Docker Hub tag: $tag"
               curl --fail --silent --show-error \
                 --request DELETE \
                 --header "Authorization: Bearer $token" \
