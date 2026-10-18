@@ -1,11 +1,57 @@
 {
+    "site": {
+        "meta": {
+            "title": "Álvaro Gutiérrez López | Senior Backend Engineer",
+            "description": "Recruiter-friendly CV and portfolio for Álvaro Gutiérrez López, focused on backend engineering, enterprise integrations, and cloud platforms."
+        },
+        "nav": {
+            "summary": "Profile",
+            "experience": "Experience",
+            "skills": "Skills",
+            "contact": "Contact"
+        },
+        "hero": {
+            "availability": "Open to senior backend and full-stack roles",
+            "titleLead": "Senior engineer for",
+            "titleAccent": "complex systems",
+            "titleTail": "that need to ship.",
+            "description": "Senior Backend Engineer with experience across Java, Scala, Node.js, cloud platforms, and enterprise integrations. This site is designed for fast recruiter review: clear scope, clean chronology, and immediate contact options.",
+            "primaryCta": "Contact me",
+            "secondaryCta": "View experience"
+        },
+        "summary": {
+            "eyebrow": "Profile",
+            "title": "A concise view of how I work",
+            "highlights": [
+                "Backend systems, cloud services, and enterprise integrations.",
+                "Java, Scala, Node.js, AWS, and PostgreSQL.",
+                "Architecture, delivery, CI/CD, and production support."
+            ]
+        },
+        "experience": {
+            "eyebrow": "Career",
+            "title": "Experience focused on delivery, APIs, and platform evolution",
+            "note": "A track record of owning services, integrations, and delivery pipelines from first commit to production.",
+            "technologies": "Technologies"
+        },
+        "skills": {
+            "eyebrow": "Core skills",
+            "title": "Technology strengths",
+            "note": "Representative strengths rather than an exhaustive stack list."
+        },
+        "contact": {
+            "eyebrow": "Contact",
+            "title": "Easy to reach for the next step",
+            "intro": "If there is a role where backend ownership, API design, and cross-team delivery matter, reach out directly."
+        }
+    },
     "about": {
         "title": "About me",
-        "content": "I'm an dynamic Web developer (backend mainly) with 6+ years of experience in different techonologies like JAVA, Ruby on Rails, or SAP. Flirting with DevOps. Eager to improve my career with different experiences, while supporting the team as much as possible."
+        "content": "Senior Backend Engineer focused on reliable cloud services and enterprise integrations. I work mainly with Java, Scala, Node.js, AWS, and PostgreSQL, improving systems from architecture through production support."
     },
     "contact": {
-        "name": "Álvaro Gutiérrez",
-        "tagline": "Full Stack Developer",
+        "name": "Álvaro Gutiérrez López",
+        "tagline": "Senior Backend Engineer",
         "email": "alvaro.glopez@gmail.com",
         "phone": "+34 695 075 191",
         "web": {
@@ -16,7 +62,7 @@
             "text": "alvaro-gutierrez-lopez",
             "link": "https://www.linkedin.com/in/alvaro-gutierrez-lopez/"
         },
-        "location": "Granada, Spain",
+        "location": "Greater Granada Metropolitan Area",
         "github": {
             "text": "alvarogl",
             "link": "https://github.com/alvarogl"
@@ -65,29 +111,60 @@
     ],
     "experiences": [
         {
-            "job_title": "Sr Backend Developer",
-            "time": "11/2022 - Present",
-            "company": "TapTap Digital S.L., Full-Remote",
+            "job_title": "Senior Software Engineer",
+            "time": "01/2026 - Present",
+            "company": "Sngular, Spain",
+            "technologies": [
+                "Java", "Scala", "AWS", "PostgreSQL", "Atlassian Forge", "Jira Cloud APIs", "Salesforce REST APIs", "CI/CD", "Cursor", "MCP"
+            ],
             "details": {
                 "responsibilities": [
                     {
-                        "head": "As part of the backend team, I take part of developing and adding new features to the Sonata DSP and its environment using different technologies:",
+                        "head": "Working as a Senior Software Engineer at Appfire through Sngular, contributing to Connector for Salesforce & Jira, an enterprise integration application enabling bidirectional synchronization between Atlassian Jira and Salesforce.",
                         "elements": [
-                            "Evolution of bidding system with hexagonal architecture",
-                            "Usage of Java 17/21 and Typescript as languages. NodeJS, MongoDB, PostgreSQL, AWS, Kafka, and ElasticSearch are also present on the stack.",
-                            "Support to other teams when using our APIs and solving issues for support team",
-                            "Monitoring of the systems using Grafana/Prometheus. We attend over 5K requests per second!",
-                            "We own the CI/CD process. With support from DevOps team, it is our responsability to design, test, and deploy new features.",
-                            "Cloud ready! AWS is our main provider."
+                            "Drive architectural improvements across legacy and modern services, focusing on scalability, maintainability, and reliability.",
+                            "Modernized the technology stack from Java 8 to Java 11, enabling adoption of newer Scala versions.",
+                            "Designed a data residency migration architecture for Atlassian Cloud, prioritizing idempotency, fault tolerance, and resilience.",
+                            "Investigated and resolved critical JVM memory issues through heap-dump analysis, memory tuning, and AWS infrastructure optimization.",
+                            "Collaborate with Tier-2 support to troubleshoot production incidents and resolve complex customer escalations.",
+                            "Maintain compatibility with evolving Atlassian and Salesforce APIs and platform requirements.",
+                            "Improve technical analysis, implementation planning, code reviews, and test design with AI-assisted development workflows and MCP integrations.",
+                            "Enhanced CI/CD pipelines with automated AI-assisted pull-request reviews while maintaining existing quality gates and engineering standards."
                         ]
                     }
                 ]
             }
         },
         {
-            "job_title": "Sr Fullstack Developer",
+            "job_title": "Senior Software Engineer",
+            "time": "11/2022 - 01/2026",
+            "company": "TapTap Digital, Spain",
+            "technologies": [
+                "Java", "Node.js", "Elasticsearch", "MongoDB", "PostgreSQL", "Redis", "AWS ECS", "AWS EC2", "AWS S3"
+            ],
+            "details": {
+                "responsibilities": [
+                    {
+                        "head": "Worked on Sonata DSP, a high-performance AdTech platform:",
+                        "elements": [
+                            "Designed and developed scalable backend services using Java and Node.js.",
+                            "Maintained a distributed microservices architecture with a focus on performance and reliability.",
+                            "Owned features end to end, from design through deployment.",
+                            "Worked closely with Product, DevOps, and Data Science teams.",
+                            "Used Elasticsearch, MongoDB, PostgreSQL, Redis, and AWS services including ECS, EC2, and S3.",
+                            "Worked in an Agile Scrum environment with a strong focus on code quality and automated testing."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "job_title": "Senior Software Engineer",
             "time": "05/2022 - 11/2022",
-            "company": "IDENTY Touchless ID, Full-Remote",
+            "company": "IDENTY Touchless ID, Madrid, Spain",
+            "technologies": [
+                "JavaScript", "TypeScript", "WebAssembly", "Angular", "Vue.js", "Java 11", "Spring Boot", "JNI", "C++", "AWS", "CI/CD"
+            ],
             "details": {
                 "responsibilities": [
                     {
@@ -110,43 +187,43 @@
             }
         },
         {
-            "job_title": "Backend JAVA Developer",
-            "time": "08/2019 - 04/2022",
-            "company": "ELCA Information Technology, Granada(Spain)",
+            "job_title": "Java Software Engineer",
+            "time": "09/2019 - 05/2022",
+            "company": "ELCA Spain, Granada, Spain",
+            "technologies": [
+                "Java 11", "Spring Framework", "Hibernate", "ActiveMQ", "Oracle DB", "Jenkins", "Selenium", "FitNesse", "Postman", "SonarQube", "SOAP", "REST", "JUnit", "Mockito", "Jira"
+            ],
             "details": {
                 "responsibilities": [
                     {
-                        "head": "Development of Time management application for ELCA's internal use:",
+                        "head": "Platform Team - Software Engineer:",
                         "elements": [
-                            "Focused in Front-end development using Angular 8 and Bootstrap. TDD using Jest and Karma. (3 months)",
-                            "Support to backend tasks with JAVA 11 + SpringBoot"
-                        ]
-                    },
-                    {
-                        "head": "Then, in SecuTix (an ELCA's company), as part of the platform team:",
-                        "elements": [
-                            "Tech stack in JAVA 11 + Spring + Hibernate + ActiveMQ. CI/CD with Jenkins. Oracle DB. Quality monitoring using Selenium, Integration Tests, Fitnesse, Postman, SONAR",
-                            "Design, support and development of public APIs in SOAP and REST",
-                            "Development of connectors and interfaces to external systems",
-                            "Direct support to customer's integrators willing to use our APIs",
-                            "Using SCRUM methodology with JIRA and applying TDD with JUnit and Mockito",
-                            "Responsible of migration to microservices for external connectors"
+                            "Worked with Java 11, Spring Framework, Hibernate, ActiveMQ, and Oracle DB; managed CI/CD pipelines with Jenkins.",
+                            "Maintained code quality using Selenium, integration tests, FitNesse, Postman, and SonarQube.",
+                            "Designed, developed, and maintained public SOAP and REST APIs.",
+                            "Built and supported interfaces and connectors to external systems.",
+                            "Provided direct technical support to external integrators using the APIs.",
+                            "Followed Agile Scrum practices using Jira and applied TDD with JUnit and Mockito.",
+                            "Led the migration of external connectors from a monolith to a microservices architecture."
                         ]
                     }
                 ]
             }
         },
         {
-            "job_title": "Ruby on Rails Developer (Full Stack)",
-            "time": "07/2018 - 08/2019",
+            "job_title": "Ruby on Rails Developer",
+            "time": "06/2018 - 08/2019",
             "company": "NGA Human Resources, Granada(Spain)",
+            "technologies": [
+                "Ruby on Rails", "MongoDB", "MySQL", "jQuery", "Bootstrap", "HAML", "CoffeeScript", "Angular", "Sass", "JavaScript", "RSpec", "Docker"
+            ],
             "details": {
                 "responsibilities": [
                     {
-                        "head": "Ruby on Rails Application, development driven by Agile methodologies. Developing NGA's flagship, hrX Exchange:",
+                        "head": "Ruby on Rails developer at NGA Human Resources, developing the Payroll Exchange application.",
                         "elements": [
-                            "Working both in Backend and Frontend using technologies as MongoDB, MySQL, jQuery, Bootstrap, HAML, CoffeeScript, Angular 6, SASS, Javascript, and, of course, Ruby on Rails framework.",
-                            "Following TDD process with RSPEC to test our application. Maintenance and usage of Docker for usage of the application."
+                            "Worked across backend and frontend using MongoDB, MySQL, jQuery, Bootstrap, HAML, CoffeeScript, Angular, Sass, JavaScript, and Ruby on Rails.",
+                            "Followed TDD with RSpec and used Docker for application maintenance."
                         ]
                     }
                 ]
@@ -155,30 +232,35 @@
         {
             "job_title": "SAP HCM Technical Consultant",
             "time": "10/2015 - 07/2018",
-            "company": "NGA Human Resources, Granada(Spain)",
+            "company": "NGA Human Resources, Granada, Spain",
+            "technologies": [
+                "SAP HCM", "ABAP", "JavaScript", "jQuery", "Talent Management"
+            ],
             "details": {
                 "responsibilities": [
                     {
-                        "head": "Technical SAP HCM Non Payroll consultant, specialized in Talent Management modules:",
+                        "head": "SAP Technical Consultant, specialized in Talent Management modules:",
                         "elements": [
-                            "Technical and functional deeper knowledge of Talent Modules (Performance, Learning, Compensation, e-Recruiting)",
-                            "Modification of customer's frontend system based on Javascript, jQuery, Prototype, and CSS."
+                            "Specialized in Performance, e-Recruitment, Learning, Organizational Management, and Personnel Administration.",
+                            "Developed customer-facing JavaScript and jQuery features and SAP HCM backend functionality with ABAP."
                         ]
                     }
                 ]
             }
         },
         {
-            "job_title": "Web developer Internship",
+            "job_title": "Full Stack Web Developer",
             "time": "06/2014 - 04/2015",
-            "company": "Aucón Asesores, S.L., Granada (Spain)",
+            "company": "Datagestión (Aucón Asesores, S.L.), Granada, Spain",
+            "technologies": [
+                "JavaScript", "jQuery", "AJAX", "PHP", "MySQL", "Bootstrap"
+            ],
             "details": {
                 "responsibilities": [
                     {
                         "elements": [
-                            "Web Application development and maintenance for GDPR Compliance of customers",
-                            "Maintenance and develop of website using PHP4, and Javascript",
-                            "MySQL Database management and queries design"
+                            "Developed web applications for Spanish data-protection compliance using JavaScript, jQuery, AJAX, PHP, MySQL, and Bootstrap.",
+                            "Worked on SEO and community-management tasks."
                         ]
                     }
                 ]

@@ -1,16 +1,15 @@
 ---
 import '../styles/global.css';
-const { locale, labels } = Astro.props;
-const canonicalPath = locale === 'en' ? '/' : `/${locale}/`;
+const { meta } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={locale}>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{labels.meta.title}</title>
-    <meta name="description" content={labels.meta.description} />
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.description} />
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +17,7 @@ const canonicalPath = locale === 'en' ? '/' : `/${locale}/`;
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="canonical" href={new URL(canonicalPath, Astro.site).toString()} />
+    <link rel="canonical" href={new URL('/', Astro.site).toString()} />
   </head>
   <body>
     <slot />

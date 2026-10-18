@@ -96,7 +96,6 @@ img {
 }
 
 .section-nav,
-.language-switcher,
 .hero-actions,
 .hero-meta,
 .contact-grid,
@@ -112,24 +111,7 @@ img {
 }
 
 .section-nav a:hover,
-.language-switcher a:hover,
 .contact-item:hover strong {
-  color: var(--accent-strong);
-}
-
-.language-switcher {
-  gap: 10px;
-  font-size: 0.88rem;
-  color: var(--muted);
-}
-
-.language-switcher a {
-  padding: 6px 10px;
-  border-radius: 999px;
-}
-
-.language-switcher a.active {
-  background: rgba(166, 105, 61, 0.12);
   color: var(--accent-strong);
 }
 
@@ -490,8 +472,7 @@ img {
   }
 
   .hero-actions,
-  .hero-meta,
-  .language-switcher {
+  .hero-meta {
     flex-wrap: wrap;
   }
 
@@ -596,6 +577,24 @@ body {
 .timeline-content { font-size: .91rem; }
 .timeline-content ul { line-height: 1.65; }
 .responsibility-head { font-size: .9rem; }
+.technology-section {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.technology-section h4 {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: .72rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.technology-section p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.6;
+}
 .skill-card { box-shadow: 0 4px 16px rgba(30,42,52,.04); }
 .skill-bar span { background: linear-gradient(90deg, #f28f68, #bb6952); }
 .contact-card { background: var(--text); color: #f8f3ea; }
@@ -647,6 +646,7 @@ body {
   .portrait-frame img { height: 270px; }
   .sidebar-card { display: block; }
   .sidebar-card .fact-list { display: grid; grid-template-columns: 1fr; margin-top: 22px; }
+  .timeline-item { grid-template-columns: 1fr; gap: 14px; }
   .visual-label { padding-left: 12%; }
   .proof-points { gap: 14px; justify-content: space-between; }
   .proof-points div { display: grid; gap: 2px; }

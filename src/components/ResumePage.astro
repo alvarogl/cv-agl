@@ -1,57 +1,59 @@
 ---
 import meImage from '../assets/me.png';
 import { Image } from 'astro:assets';
-import { contactItems, highlightFacts, labels, resumeData } from '../data/site';
+import resumeData from '../data/me.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import LanguageSwitcher from './LanguageSwitcher.astro';
 import ContactIcon from './ContactIcon.astro';
 
-const { locale } = Astro.props;
-const copy = labels[locale];
+const { site, contact } = resumeData;
+const contactItems = [
+  { icon: 'email', label: 'Email', href: `mailto:${contact.email}`, value: contact.email },
+  { icon: 'linkedin', label: 'LinkedIn', href: contact.linkedin.link, value: contact.linkedin.text },
+  { icon: 'github', label: 'GitHub', href: contact.github.link, value: contact.github.text },
+  { icon: 'website', label: 'Website', href: contact.web.link, value: contact.web.text }
+];
 ---
 
-<BaseLayout locale={locale} labels={copy}>
+<BaseLayout meta={site.meta}>
   <div class="page-shell">
     <header class="site-header">
-      <a class="brand" href={locale === 'en' ? '/' : '/es/'}>
+      <a class="brand" href="/">
         <span class="brand-mark">AG</span>
-        <span>{resumeData.contact.name}</span>
+        <span>{contact.name}</span>
       </a>
 
       <nav class="section-nav" aria-label="Section navigation">
-        <a href="#summary">{copy.nav.summary}</a>
-        <a href="#experience">{copy.nav.experience}</a>
-        <a href="#skills">{copy.nav.skills}</a>
-        <a href="#contact">{copy.nav.contact}</a>
+        <a href="#summary">{site.nav.summary}</a>
+        <a href="#experience">{site.nav.experience}</a>
+        <a href="#skills">{site.nav.skills}</a>
+        <a href="#contact">{site.nav.contact}</a>
       </nav>
-
-      <LanguageSwitcher locale={locale} labels={copy} />
     </header>
 
     <main class="content-grid">
       <section class="hero-card">
         <div class="hero-copy">
-          <div class="status-line"><span class="status-dot"></span>{copy.hero.availability}</div>
-          <p class="eyebrow">{resumeData.contact.tagline} · {resumeData.contact.location}</p>
-          <h1>{copy.hero.titleLead} <em>{copy.hero.titleAccent}</em> {copy.hero.titleTail}</h1>
-          <p class="hero-summary">{copy.hero.description}</p>
+          <div class="status-line"><span class="status-dot"></span>{site.hero.availability}</div>
+          <p class="eyebrow">{contact.tagline} · {contact.location}</p>
+          <h1>{site.hero.titleLead} <em>{site.hero.titleAccent}</em> {site.hero.titleTail}</h1>
+          <p class="hero-summary">{site.hero.description}</p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="#contact">{copy.hero.primaryCta}</a>
-            <a class="button button-secondary" href="#experience">{copy.hero.secondaryCta}</a>
+            <a class="button button-primary" href="#contact">{site.hero.primaryCta}</a>
+            <a class="button button-secondary" href="#experience">{site.hero.secondaryCta}</a>
           </div>
 
           <div class="proof-points" aria-label="Career highlights">
-            <div><strong>6+</strong><span>years building<br />web products</span></div>
-            <div><strong>5K+</strong><span>requests / second<br />supported</span></div>
+            <div><strong>Java</strong><span>backend<br />systems</span></div>
+            <div><strong>AWS</strong><span>cloud and<br />integration work</span></div>
             <div><strong>EU</strong><span>remote-ready<br />collaboration</span></div>
           </div>
         </div>
 
         <div class="hero-visual">
-          <span class="visual-label">Currently at<br /><strong>TapTap Digital</strong></span>
+          <span class="visual-label">Currently at<br /><strong>Sngular</strong></span>
           <div class="portrait-frame">
-            <Image src={meImage} alt={resumeData.contact.name} widths={[480, 640]} sizes="(max-width: 768px) 230px, 280px" />
+            <Image src={meImage} alt={contact.name} widths={[480, 640]} sizes="(max-width: 768px) 230px, 280px" />
           </div>
           <span class="visual-caption">Backend · APIs · Platform</span>
         </div>
@@ -59,14 +61,14 @@ const copy = labels[locale];
 
       <aside class="sidebar-card" id="summary">
         <div class="section-heading">
-          <p class="eyebrow">{copy.summary.eyebrow}</p>
-          <h2>{copy.summary.title}</h2>
+          <p class="eyebrow">{site.summary.eyebrow}</p>
+          <h2>{site.summary.title}</h2>
         </div>
 
         <p class="section-text">{resumeData.about.content}</p>
 
         <ul class="fact-list">
-          {highlightFacts.map((fact) => (
+          {site.summary.highlights.map((fact) => (
             <li>{fact}</li>
           ))}
         </ul>
@@ -74,9 +76,9 @@ const copy = labels[locale];
 
       <section class="content-card section-card" id="experience">
         <div class="section-heading">
-          <div class="section-kicker"><p class="eyebrow">{copy.experience.eyebrow}</p><span>2014 — now</span></div>
-          <h2>{copy.experience.title}</h2>
-          <p class="section-note">{copy.experience.note}</p>
+          <div class="section-kicker"><p class="eyebrow">{site.experience.eyebrow}</p><span>2014 — now</span></div>
+          <h2>{site.experience.title}</h2>
+          <p class="section-note">{site.experience.note}</p>
         </div>
 
         <div class="timeline">
@@ -99,6 +101,11 @@ const copy = labels[locale];
                     </ul>
                   </div>
                 ))}
+
+                <section class="technology-section" aria-label={site.experience.technologies}>
+                  <h4>{site.experience.technologies}</h4>
+                  <p>{experience.technologies.join(' · ')}</p>
+                </section>
               </div>
             </article>
           ))}
@@ -107,9 +114,9 @@ const copy = labels[locale];
 
       <section class="content-card section-card" id="skills">
         <div class="section-heading">
-          <p class="eyebrow">{copy.skills.eyebrow}</p>
-          <h2>{copy.skills.title}</h2>
-          <p class="section-note">{copy.skills.note}</p>
+          <p class="eyebrow">{site.skills.eyebrow}</p>
+          <h2>{site.skills.title}</h2>
+          <p class="section-note">{site.skills.note}</p>
         </div>
 
         <div class="skills-grid">
@@ -129,9 +136,9 @@ const copy = labels[locale];
 
       <section class="content-card section-card contact-card" id="contact">
         <div class="section-heading">
-          <p class="eyebrow">{copy.contact.eyebrow}</p>
-          <h2>{copy.contact.title}</h2>
-          <p class="section-note">{copy.contact.intro}</p>
+          <p class="eyebrow">{site.contact.eyebrow}</p>
+          <h2>{site.contact.title}</h2>
+          <p class="section-note">{site.contact.intro}</p>
         </div>
 
         <div class="contact-grid">
