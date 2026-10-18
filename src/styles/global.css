@@ -96,6 +96,7 @@ img {
 }
 
 .section-nav,
+.header-actions,
 .hero-actions,
 .hero-meta,
 .contact-grid,
@@ -108,6 +109,41 @@ img {
   gap: 20px;
   font-size: 0.95rem;
   color: var(--muted);
+}
+
+.header-actions {
+  gap: 16px;
+}
+
+.pdf-export-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid var(--text);
+  border-radius: 999px;
+  background: var(--text);
+  color: #fff;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.pdf-export-button:hover,
+.pdf-export-button:focus-visible {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
+.pdf-export-button:focus-visible {
+  outline: 3px solid rgba(217, 119, 80, 0.4);
+  outline-offset: 3px;
+}
+
+.pdf-export-button svg {
+  width: 16px;
+  height: 16px;
 }
 
 .section-nav a:hover,
@@ -444,6 +480,7 @@ img {
     display: none;
   }
 }
+
 
 @media (max-width: 720px) {
   .page-shell {

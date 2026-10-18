@@ -1,6 +1,7 @@
 ---
 import meImage from '../assets/me.png';
 import { Image } from 'astro:assets';
+import { Download } from '@lucide/astro';
 import resumeData from '../data/me.json';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactIcon from './ContactIcon.astro';
@@ -22,12 +23,18 @@ const contactItems = [
         <span>{contact.name}</span>
       </a>
 
-      <nav class="section-nav" aria-label="Section navigation">
-        <a href="#summary">{site.nav.summary}</a>
-        <a href="#experience">{site.nav.experience}</a>
-        <a href="#skills">{site.nav.skills}</a>
-        <a href="#contact">{site.nav.contact}</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="section-nav" aria-label="Section navigation">
+          <a href="#summary">{site.nav.summary}</a>
+          <a href="#experience">{site.nav.experience}</a>
+          <a href="#skills">{site.nav.skills}</a>
+          <a href="#contact">{site.nav.contact}</a>
+        </nav>
+        <button class="pdf-export-button" type="button" data-pdf-export>
+          <Download aria-hidden="true" focusable="false" stroke-width="2" />
+          <span>Download PDF</span>
+        </button>
+      </div>
     </header>
 
     <main class="content-grid">
@@ -154,3 +161,9 @@ const contactItems = [
     </main>
   </div>
 </BaseLayout>
+
+<script>
+  import { generateResumePdf } from '../scripts/generateResumePdf';
+
+  document.querySelector('[data-pdf-export]')?.addEventListener('click', generateResumePdf);
+</script>
