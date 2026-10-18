@@ -43,9 +43,6 @@ export async function generateResumePdf() {
       pdf.rect(x, y, 3, 2.2);
       pdf.line(x, y, x + 1.5, y + 1.2);
       pdf.line(x + 1.5, y + 1.2, x + 3, y);
-    } else if (type === 'phone') {
-      pdf.roundedRect(x + 0.7, y - 0.4, 1.6, 3.1, 0.25, 0.25, 'S');
-      pdf.line(x + 1.15, y + 2.1, x + 1.85, y + 2.1);
     } else if (type === 'linkedin') {
       pdf.setFillColor(...colors.muted);
       pdf.roundedRect(x, y - 0.2, 3, 3, 0.35, 0.35, 'F');
@@ -72,7 +69,6 @@ export async function generateResumePdf() {
       pdf.addImage(portrait, 'PNG', 170, 10, 24, 24);
       const contactItems = [
         { type: 'email', text: contact.email },
-        { type: 'phone', text: contact.phone },
         { type: 'linkedin', text: contact.linkedin.text },
         { type: 'website', text: contact.web.text }
       ];
